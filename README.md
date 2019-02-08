@@ -9,8 +9,12 @@ In order to be able to open the Jupyter Notebook files and execute the code you 
 1. Install the following prerequistes:
     - Anaconda 5.3 with Python 3.7 - [Link Here](https://www.anaconda.com/download/)
 2. Use Anaconda to install packages in a new or existing virtual environment:
-    `conda create -n new-env --file requirements.txt`
+    New Environment: `conda create -n new-env --file requirements.txt`
     or
-    `conda install --yes --file requirements.txt`
+    Existing Environment: `conda install --yes --file requirements.txt`
 3. Setup nbdime for a better diff tool with jupyter notebooks:
     `nbdime config-git --enable --global`
+4. Activate the created environment if you are using one.
+    `activate new-env`
+5. Run Jupyter Lab to access the notebooks.
+    `jupyter lab`
